@@ -23,8 +23,9 @@ namespace BethanysPieShop2
             //MainPage = new ButtonViewPage();
             //MainPage = new SliderViewPage();
             //MainPage = new TimeAndDatePicker();
+            //MainPage = new OtherViewPage();
+            MainPage = new CustomEntryPage();
 
-            MainPage = new OtherViewPage();
         }
 
         protected override void OnStart()
