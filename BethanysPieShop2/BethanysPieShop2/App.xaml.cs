@@ -18,7 +18,13 @@ namespace BethanysPieShop2
             //MainPage = new CarouselPageView();
             //MainPage = new ModelPageView();
             //MainPage = new StackLayoutPage();
-            MainPage = new GridPageView();
+            //MainPage = new LabelPageView();
+            //MainPage = new ImageViewPage();
+            //MainPage = new ButtonViewPage();
+            //MainPage = new SliderViewPage();
+            //MainPage = new TimeAndDatePicker();
+
+            MainPage = new OtherViewPage();
         }
 
         protected override void OnStart()

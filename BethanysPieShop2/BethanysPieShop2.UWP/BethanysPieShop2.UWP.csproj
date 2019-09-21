@@ -140,6 +140,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="basket.png" />
+    <Content Include="bethanylogo.png" />
     <Content Include="contact.png" />
     <Content Include="home.png" />
     <Content Include="patternwide.png" />

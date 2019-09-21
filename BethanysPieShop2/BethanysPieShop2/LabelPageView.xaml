@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BethanysPieShop2.LabelPageView">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label FontSize="Large">
+                    Working with Labels
+                </Label>
+                <!--Regular label properties-->
+                <Label TextDecorations="Underline" TextColor="Red">
+                    Welcome to Bethany's Pie Shop!
+                </Label>
+                <Label TextDecorations="Strikethrough" TextColor="#22cfa7">
+                    Welcome to Bethany's Pie Shop!
+                </Label>
+                <Label TextDecorations="Underline, Strikethrough" >
+                    Welcome to Bethany's Pie Shop!
+                </Label>
+                
+                <!--Wrapping Labels-->
+                <Label FontSize="Large">
+                    Wrapping Features
+                </Label>
+                <Label LineBreakMode="WordWrap">
+                    Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum.Lorem Ipsum Dolorum.Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum.
+                </Label>
+                <Label LineBreakMode="HeadTruncation">
+                    Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum.Lorem Ipsum Dolorum.Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum.
+                </Label>
+                <Label LineBreakMode="MiddleTruncation">
+                    Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum.Lorem Ipsum Dolorum.Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum. Lorem Ipsum Dolorum.
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span TextColor="#22cfa7" FontAttributes="Bold" Text="Welcome "></Span>
+                            <Span Text="To "></Span>
+                            <Span FontAttributes="Italic" FontSize="Large">
+                                Bethany's Pie Shop!
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BethanysPieShop2.ButtonViewPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    x:Name="LoadButton"
+                    Text="Click to load Bethany's Pie Shop"></Button>
+                <Button
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    CornerRadius="10"
+                    Text="ExitThisWay"></Button>
+                <Button
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    TextColor="#22cfa7"
+                    BackgroundColor="Cyan"
+                    BorderColor="Black"
+                    BorderWidth="3"
+                    Text="ExitThisWay"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
