@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BethanysPieShop2.MasterDetailView"
+             xmlns:helpers="clr-namespace:BethanysPieShop2.Helpers"
+                  xmlns:bethanysPieShop2="clr-namespace:BethanysPieShop2">
+    <MasterDetailPage.Master>
+        <bethanysPieShop2:MasterPageView x:Name="masterView"></bethanysPieShop2:MasterPageView>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <helpers:HomePageView></helpers:HomePageView>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

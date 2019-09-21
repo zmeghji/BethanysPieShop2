@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BethanysPieShop2.CarouselPageView"
+              xmlns:helpers="clr-namespace:BethanysPieShop2.Helpers">
+    <ContentPage>
+        <Label
+            FontSize="Large"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand">
+            Welcome to Bethany's Pie Shop!
+        </Label>
+    </ContentPage>
+    <helpers:PieOverview></helpers:PieOverview>
+    <helpers:BasketView></helpers:BasketView>
+    <helpers:ContactUs></helpers:ContactUs>
+
+</CarouselPage>

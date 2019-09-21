@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BethanysPieShop2.StackLayoutPage">
+    <ContentPage.Content>
+        <!--<StackLayout>
+            <BoxView 
+                Color="Green" 
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView 
+                Color="Blue" 
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView
+                HeightRequest="75"
+                Color="Red" 
+                VerticalOptions="End"
+                HorizontalOptions="FillAndExpand" />
+            <Button
+                Text="View Basket"
+                VerticalOptions="Start"
+                HorizontalOptions="FillAndExpand"
+                ></Button>
+        </StackLayout>-->
+        <!--<StackLayout Orientation="Horizontal" Spacing="30">
+            <BoxView 
+                Color="Green" 
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView 
+                Color="Blue" 
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView
+                HeightRequest="75"
+                Color="Red" 
+                VerticalOptions="End"
+                HorizontalOptions="FillAndExpand" />
+            <Button
+                Text="View Basket"
+                VerticalOptions="Start"
+                HorizontalOptions="FillAndExpand"
+                ></Button>
+        </StackLayout>-->
+        <StackLayout>
+            <Label
+                Text="Welcome to Bethany's Pie Shop!"
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"></Label>
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    Text="User name"
+                    FontSize="Medium"
+                    VerticalOptions="Center"></Label>
+                <Entry
+                    Placeholder="Enter your user name"
+                    HorizontalOptions="StartAndExpand"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    Text="Password"
+                    FontSize="Medium"
+                    VerticalOptions="Center"></Label>
+                <Entry
+                    Placeholder="Password"
+                    HorizontalOptions="StartAndExpand"></Entry>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

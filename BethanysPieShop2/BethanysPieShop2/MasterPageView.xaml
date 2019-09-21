@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BethanysPieShop2.MasterPageView"
+             xmlns:bethanysPieShop="clr-namespace:BethanysPieShop2"
+             xmlns:helpers="clr-namespace:BethanysPieShop2.Helpers"
+             Title="Navigation"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="NavigationListView" x:FieldModifier="public">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type bethanysPieShop:MasterNavigationItem}">
+                        <bethanysPieShop:MasterNavigationItem Title="Home" Icon="home.png" Target="{x:Type helpers:HomePageView}"/>
+                        <bethanysPieShop:MasterNavigationItem Title="Contact" Icon="contact.png" Target="{x:Type helpers:ContactUs}"/>
+                        <bethanysPieShop:MasterNavigationItem Title="Basket" Icon="basket.png" Target="{x:Type helpers:BasketView}"/>
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding Icon}"></Image>
+                                <Label Grid.Column="1" Text="{Binding Title}"></Label>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
