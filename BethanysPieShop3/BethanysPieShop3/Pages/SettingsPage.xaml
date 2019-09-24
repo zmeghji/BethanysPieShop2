@@ -62,7 +62,6 @@
                 Increment="1">
             </Stepper>
             <Button
-                BackgroundColor="Green"
                 Grid.Row="4"
                 Grid.ColumnSpan="2"
                 Text="Save Changes"

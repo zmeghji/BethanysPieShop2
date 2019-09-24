@@ -6,6 +6,16 @@
              mc:Ignorable="d"
              x:Class="BethanysPieShop3.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Color x:Key="textColor">pink</Color>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Green"></Setter>
+                <Setter Property="TextColor" Value="Blue"></Setter>
+            </Style>
+            <Style x:Key="ButtonType2" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Green"></Setter>
+                <Setter Property="TextColor" Value="Orange"></Setter>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -12,11 +12,11 @@ namespace BethanysPieShop3
             InitializeComponent();
 
             //MainPage = new MainPage();
-            //MainPage = new LoginPage();
+            MainPage = new LoginPage();
             //MainPage = new RegisterPage();
             //MainPage = new ContactUsPage();
-            //MainPage = new SettingsPage();
-            MainPage = new SettingsTablePage();
+            MainPage = new SettingsPage();
+            //MainPage = new SettingsTablePage();
 
         }
 
