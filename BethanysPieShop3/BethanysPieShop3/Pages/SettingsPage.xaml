@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BethanysPieShop3.Pages.SettingsPage"
+             BackgroundImageSource="patternwide.png">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                FontSize="Large"
+                HorizontalOptions="Center">Settings</Label>
+            <Picker
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                Title="Select Language"
+                BackgroundColor="LightGreen">
+                
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>English</x:String>
+                        <x:String>French</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                >
+                Monthly Budget for Pies
+            </Label>
+            <Slider
+                Grid.Row="2"
+                Grid.Column="1"
+                Maximum="500">
+            </Slider>
+            <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                >
+                Maximum ordered Pies per Month
+            </Label>
+            <Stepper
+                Grid.Row="3"
+                Grid.Column="1"
+                Maximum="10"
+                Increment="1">
+            </Stepper>
+            <Button
+                BackgroundColor="Green"
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+                Text="Save Changes"
+                Clicked="Button_Clicked"></Button>
+            <ActivityIndicator
+                    Grid.Row="5"
+                    Grid.ColumnSpan="2"
+                    x:Name="Spinner"
+                    Color="Red"
+                    IsRunning="False">
+            </ActivityIndicator>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

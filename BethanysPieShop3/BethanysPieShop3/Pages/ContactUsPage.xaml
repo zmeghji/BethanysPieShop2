@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BethanysPieShop3.Pages.ContactUsPage"
+             BackgroundImageSource="patternwide.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                Source="bethanylogo.png"></Image>
+        <Label
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            FontSize="Large"
+            HorizontalOptions="Center">
+            Send us a message!
+        </Label>
+        <Editor
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            BackgroundColor="LightGreen">
+
+        </Editor>
+        <Label
+            Grid.Row="4"
+            Grid.Column="0">Should we contact you?</Label>
+        <Switch 
+            Grid.Row="4"
+            Grid.Column="1">
+            
+        </Switch>
+        <Button
+              Grid.Row="5"
+              Grid.ColumnSpan="2"
+              Text="Send"
+              BackgroundColor="Green"></Button>
+    </Grid>
+</ContentPage>
