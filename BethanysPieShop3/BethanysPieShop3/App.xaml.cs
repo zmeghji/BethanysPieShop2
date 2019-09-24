@@ -15,7 +15,8 @@ namespace BethanysPieShop3
             //MainPage = new LoginPage();
             //MainPage = new RegisterPage();
             //MainPage = new ContactUsPage();
-            MainPage = new SettingsPage();
+            //MainPage = new SettingsPage();
+            MainPage = new SettingsTablePage();
 
         }
 

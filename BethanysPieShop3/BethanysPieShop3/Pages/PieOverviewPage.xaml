@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BethanysPieShop3.Pages.PieOverviewPage"
+             xmlns:models="clr-namespace:BethanysPieShop3.Models">
+    <ContentPage.Content>
+        <ListView CachingStrategy="RecycleElement" x:Name="PiesListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!--<TextCell Text="{Binding Name}"
+                          Detail="{Binding Price}">
+                    </TextCell>-->
+                    <ViewCell>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Text="{Binding Name}">
+                            </Label>
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Text="{Binding Price}">
+                            </Label>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <!--<ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Apple Pie</x:String>
+                    <x:String>Cherry Pie</x:String>
+                    <x:String>Pumpkin Pie</x:String>
+                </x:Array>
+            </ListView.ItemsSource>-->
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
